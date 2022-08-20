@@ -1,0 +1,33 @@
+  body {
+    background-color: #000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ffff;
+  }
+  input {
+    background-color: #111 !important;
+    color: white !important;
+  }
+  input:focus {
+    background-color: #333 !important;
+  }
+  #total {
+    background-color: #820e0e;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+  #total::before {
+    content: "Total : ";
+    padding-left: 10px;
+  }
+button {
+  background-color: rgb(78, 61, 94) !important;
+  width: 100%;
+  color: whitesmoke !important;
+  text-transform: capitalize;
+}
+button:hover {
+  background-color: rgb(132, 0, 255) !important;
+
+
+}

@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="shortcut icon"
+      href="../gallery - scroll/images/2.jpg"
+      type="image/x-icon"
+    />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>cruds</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="crud">
+        <div class="header text-center py-3 text-capitalize">
+          <h1>cruds</h1>
+          <p>product managent system</p>
+        </div>
+        <div class="inputs">
+          <input type="text" class="form-control" placeholder="Title"  id="Title">
+          <div class="price my-3">
+            <div class="row">
+              <div class="col">
+                <input type="number" onkeyup="getTotal()" class="form-control" placeholder="price"  id="price">
+              </div>
+              <div class="col">
+                <input type="number" onkeyup="getTotal()" class="form-control" placeholder="taxes" id="taxes">
+              </div>
+              <div class="col">
+                <input type="number" onkeyup="getTotal()" class="form-control" placeholder="ads"  id="ads">
+              </div>
+              <div class="col">
+                <input type="number" onkeyup="getTotal()" class="form-control" placeholder="discount"  id="discount">
+              </div>
+              <div class="col d-flex justify-content-start align-items-center">
+                <span id="total"></span>
+              </div>
+            </div>
+          </div>
+          <input type="number"  class="form-control my-3" placeholder="count"  id="count">
+          <input type="text" class="form-control" placeholder="category" id="category">
+          <button id="submit" class="btn mt-3">create</button>
+        </div>
+        <div class="outputs py-3">
+          <input type="search" onkeyup="searchProduct(this.value)" class="form-control mb-3" placeholder="search" name="" id="search">
+          <div class="btns">
+            <div class="row justify-content-between">
+              <div class="col-5">
+                <button class="btn" onclick="getSreachMood(this.id)" id="searchTitle">search by title</button>
+              </div>
+              <div class="col-5">
+                <button class="btn" onclick="getSreachMood(this.id)" id="searchCategory">search by category</button>
+              </div>
+            </div>
+          </div>
+          <div class="py-3" id="deleteAll">
+
+          </div>
+          <table class="table my-3 text-white text-capitalize">
+            <thead class="text-center">
+              <tr>
+                <th>index</th>
+                <th>title</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>total</th>
+                <th>category</th>
+                <th>update</th>
+                <th>delete</th>
+              </tr>
+            </thead>
+            <tbody id="tbody" class="text-center py-2">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
